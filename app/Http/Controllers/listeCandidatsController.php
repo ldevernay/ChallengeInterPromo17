@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\User;
+use App\Form;
 use App\Role_user;
 
 class listeCandidatsController extends Controller
@@ -16,13 +17,15 @@ class listeCandidatsController extends Controller
 
     public function getCandidats(Request $request)
     {
-
         //  $candidats = \App\candidats::All();  // a ce moment nous n'avons pas les roles liés aux utilisateurs donc on ne peux pas faire de difference pour l'instant;
-        $candidats = User::All();
-        $rolesuser=Role_user::All();
+        $users = User::All();
+        $rolesuser = Role_user::All();
         $roles = [];
-        foreach ($rolesuser as $role) {
-            $roles[] = $role->role_id;
+        $candidats = [];
+        foreach ($users as $user) {
+            if(Form::All()->where('user_id', '=', $user->id)->first()){
+                $candidats[]=$user;
+            }
         }
         // ->where(user()->roles->implode("slug"), 'Can');
         // ->roles->implode("slug");
@@ -35,7 +38,7 @@ class listeCandidatsController extends Controller
         //     }
         // }
 
-        return view('listeCandidats', ['candidats'=>$candidats, 'roles' => $roles]);
+        return view('listeCandidats', ['candidats'=>$candidats]);
     }
 
     /**
