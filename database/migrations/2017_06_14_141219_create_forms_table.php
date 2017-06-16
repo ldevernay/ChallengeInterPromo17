@@ -16,6 +16,7 @@ class CreateFormsTable extends Migration
         Schema::create('forms', function (Blueprint $table) {
             $table->increments('id');
             $table->integer('user_id');
+            $table->integer('statut_form')->default('0');
             $table->string('prenom');
             $table->string('nom');
             $table->string('email')->unique();

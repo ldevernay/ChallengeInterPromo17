@@ -64,6 +64,7 @@ class FormCivilController extends Controller
         $form = Form::all()->where('user_id', '=', Auth::user()->id)->first();
         $form->etudes=$request->input('etudes');
         $form->parcours=$request->input('parcours');
+        $form->statut_form='1';
         $form->anglais=$request->input('anglais');
         $form->motivation=$request->input('motivation');
         $form->superpouvoirs=$request->input('superpouvoirs');
