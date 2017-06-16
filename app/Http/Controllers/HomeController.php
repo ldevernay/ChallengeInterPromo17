@@ -31,8 +31,8 @@ class HomeController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-     public function confirmpage()
-     {
+    public function confirmpage()
+    {
         return view('confirmInscript');
     }
 }

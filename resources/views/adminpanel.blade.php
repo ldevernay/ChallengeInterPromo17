@@ -6,7 +6,7 @@
     <div class="row">
         <div class="col-md-8 col-md-offset-2">
             <div class="panel panel-default">
-                <div class="panel-heading">Register</div>
+                <div class="panel-heading">Ajouter un formateur</div>
                 <div class="panel-body">
                 <p>En tant qu'Administrateur, vous êtes le seul à pouvoir créer un profil formateur. Veuillez remplir les champs ci-dessous :</p>
                     <form class="form-horizontal" role="form" method="POST" action="{{ route('ajouterFormateur') }}">
@@ -16,7 +16,7 @@
                             <label for="lastName" class="col-md-4 control-label">Nom</label>
 
                             <div class="col-md-6">
-                                <input id="lastName" type="text" class="form-control" name="lastName" value="bidon" required autofocus>
+                                <input id="lastName" type="text" class="form-control" name="lastName" value="Cerveaux" required autofocus>
 
                                 @if ($errors->has('lastName'))
                                     <span class="help-block">
@@ -30,7 +30,7 @@
                             <label for="firstName" class="col-md-4 control-label">Prénom</label>
 
                             <div class="col-md-6">
-                                <input id="firstName" type="text" class="form-control" name="firstName" value="candidat" required autofocus>
+                                <input id="firstName" type="text" class="form-control" name="firstName" value="Allan" required autofocus>
 
                                 @if ($errors->has('firstName'))
                                     <span class="help-block">
@@ -44,7 +44,7 @@
                             <label for="email" class="col-md-4 control-label">Adresse e-mail</label>
 
                             <div class="col-md-6">
-                                <input id="email" type="email" class="form-control" name="email" value="bidoncandidat@example.com" required>
+                                <input id="email" type="email" class="form-control" name="email" value="formateurBidont@example.com" required>
 
                                 @if ($errors->has('email'))
                                     <span class="help-block">
@@ -78,7 +78,7 @@
 
                         <div class="form-group">
                             <div class="col-md-6 col-md-offset-4">
-                                <button type="submit" class="btn btn-primary">
+                                <button type="submit" class="btn btn-primary" disabled>
                                     Ajouter un nouveau formateur
                                 </button>
                             </div>

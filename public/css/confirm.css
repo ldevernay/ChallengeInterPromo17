@@ -1,15 +1,12 @@
-body{
-	background-color: #e6e4e4;
-}
 .bord{
 	border: 1px solid black;
-	margin: 10vh 20px;
+	margin: 2em 1em 3em 1em;
 	padding: 20px;
 	text-align: center;
 }
 .html{
 	width: 50px;
-	position:relative; 
+	position:relative;
 }
 .css{
 	width: 50px;
@@ -21,7 +18,7 @@ body{
 	width: 35px;
 }
 .logo{
-	width: 200px;
+	width: 25em;
 	display: block;
 	margin-left: auto;
 	margin-right: auto;

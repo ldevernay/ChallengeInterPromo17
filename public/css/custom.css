@@ -1,0 +1,99 @@
+body{
+	background-color: #e6e4e4;
+}
+
+.navbar-default {
+	background: rgba(226, 20, 27, .9);
+}
+
+.navbar {
+	position: fixed;
+	    width: 100%;
+    /*margin-bottom: 100px;*/
+}
+
+.container-fluid>.navbar-collapse, .container-fluid>.navbar-header, .container>.navbar-collapse, .container>.navbar-header {
+	display: fixed;
+	color: white;
+		font-weight: bold;
+
+}
+
+.navbar-default .navbar-nav>.open>a, .navbar-default .navbar-nav>.open>a:focus, .navbar-default .navbar-nav>.open>a:hover {
+	background-color: transparent;
+	color: white;
+}
+
+i {
+	color: rgba(226, 20, 27, .8);
+}
+
+.fa-info-circle:before {
+	font-size: 18px;
+}
+
+.dropdown-menu>li>a {
+	color: white;
+}
+
+.navbar-default .navbar-nav .open .dropdown-menu>li>a {
+	color: white;
+	font-weight: bold;
+}
+
+.textnav {
+	color: white;
+}
+
+.navbar-default .navbar-brand {
+	color: white;
+		font-weight: bold;
+
+}
+
+.navbar-default .navbar-nav>li>a, .navbar-default .navbar-text {
+	color: white;
+		font-weight: bold;
+
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+	background-color: white;
+}
+
+.navbar-default .navbar-nav .open .dropdown-menu>li>a:focus, .navbar-default .navbar-nav .open .dropdown-menu>li>a:hover {
+	color: white;
+	font-weight: bold;
+}
+
+/*.navbar-brand>a {
+	width: 70vw;
+}*/
+.navbar-brand {
+	display: flex;
+}
+
+.logosimplon {
+	width: 1.4em;
+	height: auto;
+	margin-right: .7em;
+}
+
+.btn {
+	background-color: rgba(226, 20, 27, .9);
+	border: none;
+	color: white;
+	font-weight: bold;
+}
+
+.btn:active {
+	background-color: rgba(226, 20, 27, .9);
+}
+
+.form-control:focus {
+	border-color: rgba(226, 20, 27, .4);
+}
+
+.panel-heading {
+	font-size: 24px;
+}

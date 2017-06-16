@@ -6,9 +6,10 @@
 
   <table class="table table-striped">
     <thead>
-    <p>Liste de tous les candidats dont la candidature est complète :</p>
+    <h4>Liste de tous les candidats dont la candidature est complète :</h4>
       <tr>
-        <th>Prénom, Nom</th>
+      <th style="text-align:center;">Infos</th>
+        <th>Prénom Nom</th>
         <th>Email</th>
       </tr>
     </thead>
@@ -16,7 +17,9 @@
     @foreach ($candidats as $key => $candidat)
     @if($roles[$key] == 2)
       <tr>
-        <td><a href="/candidatDetaille/{{ $candidat->id }}">( i )</a> | {{$candidat->firstName}} {{$candidat->lastName}}</td>
+
+        <td style="text-align:center;"><a href="/candidatDetaille/{{ $candidat->id }}" target="_blank"><i class="fa fa-info-circle" aria-hidden="true"></i></a></td>
+        <td>{{$candidat->firstName}} {{$candidat->lastName}}</td>
         <td>{{$candidat->email}}</td>
       </tr>
     @endif
